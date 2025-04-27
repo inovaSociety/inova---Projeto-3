@@ -10,7 +10,7 @@ const Home = () => {
                     <div className='line'>Inovação e usabilidade <br></br> em cada detalhe <br></br> Destaque sua empresa online</div>
                 </div>
                 <div className='links'>
-                    <a href="" className='b-teste'>Conheça nos projetos</a>
+                    <a href="" className='b-teste'>Conheça os projetos</a>
                 </div>
             </div>
             <div className='h-right'>
