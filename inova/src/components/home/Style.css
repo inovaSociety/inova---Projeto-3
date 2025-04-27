@@ -33,11 +33,18 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
-    color: black;
+    color: #fff;
+    background-color: rgb(8, 119, 229);
     text-align: center;
     border: 0.5mm solid rgb(200, 200, 200);
     border-radius: 5mm;
     padding: 7px 20px;
+    
+}
+
+.links a:hover{
+    color: #fff;
+    background-color: rgb(4, 101, 199);
 }
 
 .h-right{
