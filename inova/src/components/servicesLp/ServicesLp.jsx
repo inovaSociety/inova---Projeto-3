@@ -7,6 +7,9 @@ const ServicesLp = () => {
     <div>
         <h2>Serviços</h2>
         <Box/>
+        <Box/>
+        <Box/>
+        <Box/>
     </div>
   )
 }

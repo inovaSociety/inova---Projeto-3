@@ -1,15 +1,15 @@
 import React from 'react'
 import './Style.css'
 
-const BoxService = () => {
+const BoxService = ({ id, title, description, icon, isVisible }) => {
   return (
-    <div className='box-pai'>
+    <div className={`box-pai service-section ${isVisible ? 'visible' : ''}`} data-id={id}>
         <div className='box-filho-img'> 
-            <img src="" alt="imagem da caixa de texto" />
+            {icon ? icon : <img src="" alt="imagem da caixa de texto" />}
         </div>
         <div className='box-filho-texto'> 
-            <h4>Lorem Impsum</h4>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+            <h4>{title || "Lorem Ipsum"}</h4>
+            <p>{description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."}</p>
         </div>
     </div>
   )
