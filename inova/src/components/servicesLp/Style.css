@@ -1,0 +1,32 @@
+.box-pai {
+    display: flex;
+    align-items: center;
+    background-color: #b6cde0; /* cor de fundo azul claro */
+    border-radius: 20px;
+    padding: 20px 30px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-filho-img img {
+    width: 60px;
+    height: auto;
+}
+
+.box-filho-texto {
+    margin-left: 20px;
+}
+
+.box-filho-texto h4 {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.box-filho-texto p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #1a1a1a;
+    max-width: 500px;
+}
