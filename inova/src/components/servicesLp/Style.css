@@ -3,6 +3,7 @@
     display: flex;
     min-height: 100vh;
     background-color: #f0f5fa;
+    position: relative;
   }
   
   .services-sidebar {
@@ -13,7 +14,7 @@
   
   .services-content {
     width: 75%;
-    padding: 2rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -24,22 +25,22 @@
     font-size: 2rem;
     font-weight: bold;
     color: #1e3a5f;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Espaçamento adequado após o título */
   }
   
   /* Timeline moderna */
   .timeline-container {
     position: absolute;
-    left: 50%;
-    top: 6rem;
-    bottom: 1rem;
-    height: calc(100% - 7rem);
+    left: 2rem; /* Alinhado à esquerda com o título */
+    top: 5rem; /* Começa logo após o título */
+    height: calc(100% - 6rem); /* Altura ajustada, começa após o título e continua até o fim */
+    width: 3rem; /* Largura adequada para a linha e pontos */
   }
   
   .timeline-line {
     position: absolute;
-    left: 0;
-    width: 4px;
+    left: 1.5rem; /* Centralizado na área da timeline */
+    width: 3px;
     height: 100%;
     border-radius: 9999px;
     background: linear-gradient(to bottom, #60a5fa, #3b82f6, #1e40af);
@@ -47,24 +48,23 @@
   }
   
   .timeline-point-wrapper {
-    position: absolute;
-    height: 33%;
-    width: 40px;
-    left: -18px;
+    /* Posicionamento dinâmico via JavaScript para alinhar com o centro de cada box */
+    transform: translateY(-50%); /* Centraliza os pontos verticalmente */
+    left: -0.5rem; /* Ajuste lateral para centralizar na linha */
+    width: 5rem; /* Largura para o ponto e a linha conectora */
   }
   
   .timeline-point {
     position: absolute;
-    top: 50%;
     width: 16px;
     height: 16px;
-    transform: scale(0);
-    opacity: 0;
-    transition: all 0.7s ease-out;
+    left: 1.5rem; /* Centralizado na linha da timeline */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    opacity: 0.4;
+    transition: opacity 0.7s ease-out;
   }
   
   .timeline-point.active {
-    transform: scale(1);
     opacity: 1;
   }
   
@@ -88,31 +88,10 @@
     background-color: #3b82f6;
   }
   
-  .timeline-point.active .point-inner::after {
-    animation: pulse 2s infinite;
-  }
-  
-  .point-glow {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: -8px;
-    left: -8px;
-    border-radius: 50%;
-    background-color: #60a5fa;
-    opacity: 0.3;
-    display: none;
-  }
-  
-  .timeline-point.active .point-glow {
-    display: block;
-    animation: ping 2s infinite;
-  }
-  
   .connector-line {
     position: absolute;
     top: 50%;
-    left: 16px;
+    left: 3rem; /* Começa após o ponto */
     height: 2px;
     width: 0;
     background: linear-gradient(to right, #3b82f6, transparent);
@@ -121,7 +100,7 @@
   }
   
   .connector-line.active {
-    width: 48px;
+    width: 2rem; /* Comprimento da linha conectora */
     opacity: 1;
   }
   
@@ -134,6 +113,7 @@
     transition: all 0.7s ease-in-out;
     opacity: 0;
     transform: translateX(3rem);
+    margin-bottom: 2.5rem; /* Espaçamento consistente entre os boxes */
   }
   
   .box-pai.visible {
@@ -152,6 +132,7 @@
   
   .service-icon {
     font-size: 2rem;
+    color: #3b82f6;
   }
   
   .box-filho-texto {
@@ -169,30 +150,35 @@
     color: #4b5563;
   }
   
-  /* Animações */
-  @keyframes pulse {
-    0% {
-      transform: scale(0.95);
+  /* Responsividade para dispositivos móveis */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
     }
-    50% {
-      transform: scale(1.05);
+    
+    .services-sidebar, 
+    .services-content {
+      width: 100%;
+      padding: 1.5rem;
     }
-    100% {
-      transform: scale(0.95);
+    
+    .timeline-container {
+      left: 1rem;
+      height: auto;
+      top: 6rem;
+      bottom: 0;
     }
-  }
-  
-  @keyframes ping {
-    0% {
-      transform: scale(0.8);
-      opacity: 0.3;
+    
+    .timeline-line {
+      height: calc(100% + 10rem);
+      left: 0.75rem;
     }
-    70% {
-      transform: scale(1.2);
-      opacity: 0;
+    
+    .connector-line.active {
+      width: 1.5rem;
     }
-    100% {
-      transform: scale(0.8);
-      opacity: 0;
+    
+    .timeline-point {
+      left: 0.75rem;
     }
   }
