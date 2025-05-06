@@ -8,7 +8,7 @@ const Index = () => {
         <div className='header'>
             <div className='container'>
             <div className='logo'>
-                <img src={logo} alt="logo do site " width={80} />
+                <img src={logo} alt="logo do site " />
             </div>
             <div className='right'>
                 <a href="">Home</a>
