@@ -32,9 +32,9 @@
   .timeline-container {
     position: absolute;
     left: 2rem; /* Alinhado à esquerda com o título */
-    top: 5rem; /* Começa logo após o título */
+    top: 6rem; /* Começa logo após o título */
     height: calc(100% - 6rem); /* Altura ajustada, começa após o título e continua até o fim */
-    width: 3rem; /* Largura adequada para a linha e pontos */
+    width: 1rem; /* Largura adequada para a linha e pontos */
   }
   
   .timeline-line {
@@ -50,7 +50,7 @@
   .timeline-point-wrapper {
     /* Posicionamento dinâmico via JavaScript para alinhar com o centro de cada box */
     transform: translateY(-50%); /* Centraliza os pontos verticalmente */
-    left: -0.5rem; /* Ajuste lateral para centralizar na linha */
+    left: -0.01rem; /* Ajuste lateral para centralizar na linha */
     width: 5rem; /* Largura para o ponto e a linha conectora */
   }
   
@@ -91,7 +91,7 @@
   .connector-line {
     position: absolute;
     top: 50%;
-    left: 3rem; /* Começa após o ponto */
+    left: 2.3rem; /* Começa após o ponto */
     height: 2px;
     width: 0;
     background: linear-gradient(to right, #3b82f6, transparent);
