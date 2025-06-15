@@ -34,6 +34,7 @@ const workIconStyles = {background: "06D6A)"};
               
               >
                 <h3 className='vertical-timeline-element-title'>{element.title}</h3>
+                <p id='description' >{element.description}</p>
 
               </VerticalTimelineElement>
             )
