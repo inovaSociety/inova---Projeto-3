@@ -1,38 +1,50 @@
 import React from 'react'
-import {VerticalTimeLine, VertimeLineElement} from 'react-vertical-timeline-component'
+import {
+  VerticalTimeline,
+  VerticalTimelineElement
+} from 'react-vertical-timeline-component'
 
 import 'react-vertical-timeline-component/style.min.css'
-
-  const services = [
-    {
-      id: 1,
-      title: "UI DESIGN",
-      icon: <div className="service-icon ui-icon">🔮</div>, 
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."
-    },
-    {
-      id: 2,
-      title: "DESENVOLVIMENTO",
-      icon: <div className="service-icon dev-icon">💻</div>, 
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."
-    },
-    {
-      id: 3,
-      title: "SEO",
-      icon: <div className="service-icon seo-icon">🌐</div>, 
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."
-    }
-  ];
-
+import timelineElements from './timeLineElements'
 
 const ServicesLp = () => {
+const workIconStyles = {background: "06D6A)"};
+
   return (
     <div>
-        <h1>Serviços</h1>
+      <h1>Serviços</h1>
 
-        <VerticalTimeLine>
-          services.map()
-        </VerticalTimeLine>
+      <VerticalTimeline>
+        {/* elementos vão aqui */
+          timelineElements.map( element => {
+          /* let isWorkIcon = element.icon === 'work' */
+          
+            return(
+              <VerticalTimelineElement
+               key={element.key}
+               date={element.date}
+               dateClassName='date'
+               /* iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles} */
+
+
+               /* esse propiedade icon que ira dizer qual icone ficará dentro na timeline
+               
+                icon={}
+               */ 
+              
+              >
+                <h3 className='vertical-timeline-element-title'>{element.title}</h3>
+
+              </VerticalTimelineElement>
+            )
+          })
+        
+        
+        
+        
+        
+        }
+      </VerticalTimeline>
     </div>
   )
 }
