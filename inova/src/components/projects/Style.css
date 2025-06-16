@@ -1,0 +1,133 @@
+.projeto-zero{
+    background-color: #F4F5F6;
+}
+
+section {
+  padding: 96px 16px;
+  position: relative;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+span {
+  color: var(--primary-color); /* ou color: #xxxxxx; */
+}
+
+p {
+  text-align: center;
+  color: #6c757d; /* ou outra cor suave para texto secundário */
+  margin-bottom: 48px;
+  max-width: 672px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.class-projects-cards{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card-um {
+  background-color: #f9f9f9;  /* substitua pela cor correta do seu tema */
+  border-radius: 0.5rem;      /* 8px */
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+
+  max-width: 320px;       /* Ou o valor que quiser, por exemplo 280px, 360px etc */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card-um:hover {
+  transform: translateY(-2px);
+}
+
+.master-class {
+  height: 192px;         /* exemplo com altura fixa */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.project-card-um:hover .project-image {
+  transform: scale(1.10);
+}
+
+.p-6 {
+  padding: 1.5rem; /* p-6 → 6 * 0.25rem = 1.5rem (24px) */
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;    /* gap-2 → 2 * 0.25rem = 0.5rem (8px) */
+  margin-bottom: -30px; /* mb-4 → 4 * 0.25rem = 1rem (16px) */
+}
+
+.project-tag {
+  padding: 0.25rem 0.5rem; /* py-1 = 0.25rem (4px), px-2 = 0.5rem (8px) */
+  font-size: 0.75rem;      /* text-xs → 12px */
+  font-weight: 500;        /* font-medium */
+  border-radius: 9999px;   /* rounded-full */
+  background-color: var(--secondary, #e2e8f0); /* substitua #e2e8f0 pela cor real */
+  color: var(--secondary-foreground, #1a202c); /* substitua #1a202c pela cor real */
+   border: 2px solid var(--secondary-border, #8f0); /* substitua #e2e8f0 pela cor real da borda */
+}
+
+
+.project-title {
+  font-size: 1.25rem;       /* text-xl => 20px */
+  font-weight: 600;         /* font-semibold */
+  margin-bottom: 0.25rem;
+  margin-top: 10px; 
+  text-align: center;  /* mb-1 => 4px */
+}
+
+.project-description {
+  color: var(--muted-foreground, #6b7280); /* substitua pela cor real do seu design system */
+  font-size: 0.875rem;       /* text-sm => 14px */
+  margin-bottom: 1rem; 
+  margin-top: 5px;     /* mb-4 => 16px */
+}
