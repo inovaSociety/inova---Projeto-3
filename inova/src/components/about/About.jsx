@@ -1,5 +1,6 @@
 import React from 'react'
 import Team from './Team'
+import './Style.css'
 
 
 const About = () => {
