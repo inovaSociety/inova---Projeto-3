@@ -7,6 +7,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css'
 import timelineElements from './timeLineElements'
 
+
 const ServicesLp = () => {
 const workIconStyles = {background: "06D6A)"};
 
@@ -33,9 +34,10 @@ const workIconStyles = {background: "06D6A)"};
                */ 
               
               >
-                <h3 className='vertical-timeline-element-title'>{element.title}</h3>
-                <p id='description' >{element.description}</p>
-
+                    <div className='box-filho-texto'> 
+                        <h4>{element.title}</h4>
+                        <p>{element.description}</p>
+                    </div>
               </VerticalTimelineElement>
             )
           })

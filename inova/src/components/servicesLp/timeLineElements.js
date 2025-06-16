@@ -2,14 +2,16 @@ const timelineElements = [
   {
     id: 1,
     title: "UI DESIGN",
-    icon: "ui", // <- só um identificador
+    icon: "ui", 
     description: "Lorem ipsum dolor sit amet..."
   },
   {
     id: 2,
     title: "DESENVOLVIMENTO",
-    icon: "dev",
-    description: "Lorem ipsum dolor sit amet..."
+    icon: "dev", //icone na bolinha da time line
+    description: "Lorem ipsum dolor sit amet...",
+    
+
   },
   {
     id: 3,
