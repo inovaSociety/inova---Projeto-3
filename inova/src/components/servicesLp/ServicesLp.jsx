@@ -13,7 +13,7 @@ const workIconStyles = {background: "06D6A)"};
 
   return (
     <div>
-      <h1 className='title'>Serviços</h1>
+      <h1 className='title-service'>Serviços</h1>
 
       <VerticalTimeline>
         {/* elementos vão aqui */
