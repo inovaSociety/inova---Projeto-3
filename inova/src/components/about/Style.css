@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .card .img img{
     width: 140px;
     height: 140px;
@@ -58,7 +60,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100%/3) - 12px);
-    gap: 16px;
+    gap: 20px;
     overflow: hidden;
 }
 
@@ -79,7 +81,8 @@
     justify-content: center;
     flex-direction: column;
     padding-bottom: 10px;
-    cursor: pointer;    
+    cursor: pointer; 
+    margin: 0 12px;   
 
 }
 
