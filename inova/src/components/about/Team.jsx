@@ -5,54 +5,45 @@ import SetaDireita from '../../images/seta-direita.png'
 import SetaEsquerda from '../../images/seta-esquerda.png'
 
 const Team = () => {
+
+    const data = [
+        {
+            id: 1,
+            name:"Jason Lee",
+            img:Ranger,
+            job:"Desenvolvedor"
+        }
+
+
+
+
+
+    ]
   return (
     <div className='body-team'>
         <div className='wrapper'>
-            <div className='i'>
+
+
+            {/*<div className='i'>
                 <img src={SetaEsquerda} alt="seta esquerda" width={15}/>
-            </div>
-            
-            <ul className='carousel'>
-                <li className='card'>
-                    <div className='img'>
-                        <img src={Ranger} alt="imagem do profissional" />
-                    </div>
-                        <h2>Jason Lee</h2>
-                        <span>Desenvolvedor</span>
-                </li>
-                <li className='card'>
-                    <div className='img'>
-                        <img src={Ranger} alt="imagem do profissional" />
-                    </div>
-                        <h2>Jason Lee</h2>
-                        <span>Desenvolvedor</span>
-                </li>
-                <li className='card'>
-                    <div className='img'>
-                        <img src={Ranger} alt="imagem do profissional" />
-                    </div>
-                        <h2>Jason Lee</h2>
-                        <span>Desenvolvedor</span>
-                </li>
-                <li className='card'>
-                    <div className='img'>
-                        <img src={Ranger} alt="imagem do profissional" />
-                    </div>
-                        <h2>Jason Lee</h2>
-                        <span>Desenvolvedor</span>
-                </li>
-                <li className='card'>
-                    <div className='img'>
-                        <img src={Ranger} alt="imagem do profissional" />
-                    </div>
-                        <h2>Jason Lee</h2>
-                        <span>Desenvolvedor</span>
-                </li>
-                                
-            </ul>
-            <div className='i'>
+            </div>*/}
+
+            {data.map((d) =>(
+                
+                <ul className='carousel'>
+                    <li className='card'>
+                        <div className='img'>
+                            <img src={d.img} alt="imagem do profissional" />
+                        </div>
+                            <h2>{d.name}</h2>
+                            <span>{d.job}</span>
+                    </li>           
+                </ul>
+            ))}
+
+            {/*<div className='i'>
                 <img src={SetaDireita} alt="seta direita" width={15}  />
-            </div>
+            </div>*/}
             
         </div>
     </div>
