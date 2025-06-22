@@ -5,6 +5,7 @@ import Home from './components/home/Home'
 import Service from './components/servicesLp/ServicesLp'
 import Project from './components/projects/Project'
 import About from './components/about/About'
+
 function App() {
 
 
@@ -12,9 +13,11 @@ function App() {
     <>
      <Navbar/>
      <Home/>
-     <Project/>
      <Service/>
+     <Project/>
+    
      <About/>
+  
      
     </>
   )
