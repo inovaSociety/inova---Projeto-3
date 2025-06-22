@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
         <h1>Sobre nós</h1>
-        <div>
+        <div className='faixa-prom'>
           <h1> Vamos trabalhar juntos </h1>
           <h4> Entre em contato com nossos especialistas para analisar sua <br />
             ideia ou produto e discutir opções para a melhor abordagem</h4>
