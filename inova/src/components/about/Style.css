@@ -149,11 +149,4 @@
 
 
 
-@media screen and (max-width: 900px){
-    .wrapper .carousel{
-        grid-auto-columns: calc((100% / 2) - 9px);
-    }
-
-}
-
 
