@@ -1,0 +1,51 @@
+.card-inovacao {
+  background-color: #1a1a1a; /* Fundo bem escuro, quase preto */
+  color: #ffffff; /* Cor do texto principal (branco) */
+  padding: 80px 120px; /* Espaçamento interno. Ajuste conforme precisar */
+  text-align: left; /* Alinha o texto à esquerda */
+  width: 100%; /* O card ocupa toda a largura disponível */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+  font-family: 'Arial', sans-serif; /* Exemplo de fonte, escolha uma que goste */
+}
+
+.titulo-principal {
+  font-size: 3.5em; /* Tamanho da fonte grande para o título */
+  font-weight: bold; /* Título em negrito */
+  margin-bottom: 25px; /* Espaçamento abaixo do título */
+  line-height: 1.1; /* Altura da linha para o texto não ficar muito junto */
+}
+
+.destaque {
+  color: #ffc72c; /* Cor amarela para a parte destacada */
+}
+
+.subtitulo {
+  font-size: 1.8em; /* Tamanho da fonte para o subtítulo */
+  color: #ffffff; /* Subtítulo branco */
+  margin-bottom: 40px; /* Espaçamento abaixo do subtítulo */
+  font-weight: normal; /* Geralmente subtítulos não são tão negrito quanto o título */
+}
+
+.saiba-mais {
+  font-size: 1.1em; /* Tamanho da fonte para o texto menor */
+  color: #cccccc; /* Cor cinza clara para o texto secundário */
+}
+
+@media (max-width: 768px) {
+  .card-inovacao {
+    padding: 40px 30px; /* Reduz o padding em telas menores */
+  }
+
+  .titulo-principal {
+    font-size: 2.5em;
+  }
+
+  .subtitulo {
+    font-size: 1.4em;
+  }
+
+  .saiba-mais {
+    font-size: 1em;
+  }
+}
+
