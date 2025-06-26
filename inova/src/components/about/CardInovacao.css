@@ -29,6 +29,8 @@
 .saiba-mais {
   font-size: 1.1em; /* Tamanho da fonte para o texto menor */
   color: #cccccc; /* Cor cinza clara para o texto secundário */
+  text-align: left;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
