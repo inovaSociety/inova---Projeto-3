@@ -1,6 +1,5 @@
-.projeto-zero{
-    background-color: #F4F5F6;
-}
+@import "tailwindcss";
+
 
 section {
   padding: 96px 16px;
@@ -15,12 +14,7 @@ section {
   padding-right: 1rem;
 }
 
-.text-primary{
-   font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 16px;
-  text-align: center;
-}
+
 
 
 
@@ -34,44 +28,27 @@ span {
   color: var(--primary-color); /* ou color: #xxxxxx; */
 }
 
-p {
-  text-align: center;
-  color: #6c757d; /* ou outra cor suave para texto secundário */
-  margin-bottom: 48px;
-  max-width: 672px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .class-projects-cards{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @media (min-width: 768px) {
-  .grid-container {
+  .class-projects-cards {
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
 
 @media (min-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
+  .class-projects-cards {
+    grid-template-columns: repeat(4, 1fr);
+    
   }
 }
 
-.project-card-um {
-  background-color: #f9f9f9;  /* substitua pela cor correta do seu tema */
-  border-radius: 0.5rem;      /* 8px */
-  overflow: hidden;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
-
-  max-width: 320px;       /* Ou o valor que quiser, por exemplo 280px, 360px etc */
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .project-card-um:hover {
   transform: translateY(-2px);
@@ -108,15 +85,6 @@ p {
   margin-bottom: -30px; /* mb-4 → 4 * 0.25rem = 1rem (16px) */
 }
 
-.project-tag {
-  padding: 0.25rem 0.5rem; /* py-1 = 0.25rem (4px), px-2 = 0.5rem (8px) */
-  font-size: 0.75rem;      /* text-xs → 12px */
-  font-weight: 500;        /* font-medium */
-  border-radius: 9999px;   /* rounded-full */
-  background-color: var(--secondary, #e2e8f0); /* substitua #e2e8f0 pela cor real */
-  color: var(--secondary-foreground, #1a202c); /* substitua #1a202c pela cor real */
-   border: 2px solid var(--secondary-border, #8f0); /* substitua #e2e8f0 pela cor real da borda */
-}
 
 
 .project-title {

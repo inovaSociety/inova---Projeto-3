@@ -12,7 +12,7 @@ const ServicesLp = () => {
 const workIconStyles = {background: "06D6A)"};
 
   return (
-    <div>
+    <div className='service-p'>
       <h1 className='title-service'>Serviços</h1>
 
       <VerticalTimeline>

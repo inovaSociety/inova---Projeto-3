@@ -12,18 +12,45 @@ const Card = () => {
           tags: ["React", "TailwinndCSS"],
           demoUrl: "#",
           gitHubUrl:"#"
-      }
+      },
+      {
+          id: 2,
+          title: "Pizzaria Landing Page",
+          description: "Um bela landing page de uma pizzaria",
+          image: Pizaaria,
+          tags: ["React", "TailwinndCSS"],
+          demoUrl: "#",
+          gitHubUrl:"#"
+      },
+      {
+          id: 3,
+          title: "Pizzaria Landing Page",
+          description: "Um bela landing page de uma pizzaria",
+          image: Pizaaria,
+          tags: ["React", "TailwinndCSS"],
+          demoUrl: "#",
+          gitHubUrl:"#"
+      },
+      {
+          id: 4,
+          title: "Pizzaria Landing Page",
+          description: "Um bela landing page de uma pizzaria",
+          image: Pizaaria,
+          tags: ["React", "TailwinndCSS"],
+          demoUrl: "#",
+          gitHubUrl:"#"
+      },
   ]
 
 
   return (
-    <div>Card inicial
+    <div>
       <div className='class-projects-cards'>
 
             {projects.map((project,key) => (
                 <div
                     key={key}
-                    className='project-card-um'
+                    className='bg-[#f9f9f9] rounded-md shadow-sm transition-transform duration-200 max-w-sm mx-auto hover:-translate-y-1 project-card-um'
                 >
                     <div className='master-class'>
                         <img src={project.image} alt={project.title} className='project-image'/>
@@ -31,7 +58,7 @@ const Card = () => {
                     <div className='p-6'>
                         <div className='tags-container'> 
                             {project.tags.map((tag) =>(
-                                <span className='project-tag'>
+                                <span className='py-1 px-2 text-xs font-medium rounded-full bg-[#e2e8f0] text-[#1a202c] border-2 border-[#8f0]'>
                                     {tag}
                                 </span>
                             ))}
