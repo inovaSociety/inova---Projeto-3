@@ -1,11 +1,11 @@
 .card-inovacao {
-  background-color: #1a1a1a; /* Fundo bem escuro, quase preto */
+  background-color: #080808; /* Fundo bem escuro, quase preto */
   color: #ffffff; /* Cor do texto principal (branco) */
-  padding: 80px 120px; /* Espaçamento interno. Ajuste conforme precisar */
+  padding: 80px 120px; 
   text-align: left; /* Alinha o texto à esquerda */
   width: 100%; /* O card ocupa toda a largura disponível */
   box-sizing: border-box; /* Garante que o padding não aumente a largura total */
-  font-family: 'Arial', sans-serif; /* Exemplo de fonte, escolha uma que goste */
+  font-family: 'Arial', sans-serif; 
 }
 
 .titulo-principal {
@@ -16,22 +16,45 @@
 }
 
 .destaque {
-  color: #ffc72c; /* Cor amarela para a parte destacada */
+  color: #034ec6; /* Cor amarela para a parte destacada */
+  display: block; /* Faz com que o destaque ocupe toda a linha */
 }
 
 .subtitulo {
-  font-size: 1.8em; /* Tamanho da fonte para o subtítulo */
+  font-size: 1.7em; /* Tamanho da fonte para o subtítulo */
   color: #ffffff; /* Subtítulo branco */
-  margin-bottom: 40px; /* Espaçamento abaixo do subtítulo */
-  font-weight: normal; /* Geralmente subtítulos não são tão negrito quanto o título */
+  margin-bottom: 40px; 
+  font-weight: normal;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  letter-spacing: 0.2em;
 }
 
 .saiba-mais {
-  font-size: 1.1em; /* Tamanho da fonte para o texto menor */
-  color: #cccccc; /* Cor cinza clara para o texto secundário */
-  text-align: left;
-  margin-left: 10px;
+  font-size: 1.0em; 
+  color: #cccccc; 
+  text-align: center; /* Centraliza o texto do link */
+  display: inline-flex; /* Permite alinhar o ícone com o texto */
+  gap: 8px; /* Espaço entre o texto e o ícone */
+  align-items: center; /* Alinha verticalmente o texto e o ícone */
+  margin-top: 20px; /* Espaçamento acima do link */
+  
 }
+
+.saiba-mais-img {
+  position: relative;
+  top: -10px; /* Ajuste esse valor até ficar como deseja */
+}
+
+.saiba-mais:hover {
+  color: #034ec6; /* Cor do link ao passar o mouse */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  text-decoration: underline;
+}
+
+.saiba-mais:hover img{
+  filter: brightness(0.7); /* Exemplo: deixa o ícone mais escuro */
+}
+
 
 @media (max-width: 768px) {
   .card-inovacao {

@@ -11,7 +11,7 @@ const About = () => {
 
       <h1 className='about-title'>Sobre nós</h1>
       <CardInovacao/>
-      <h2 className='mid_titulo'>O Que nos torna únicos</h2>
+      <h2 className='mid_titulo'>O  que nos faz únicos</h2>
       <div className='about-text'>
         <div className='about-text-coluna'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident, quis inventore quaerat repellendus, voluptates sed, reprehenderit earum accusamus non debitis labore delectus? Doloribus commodi a tempore praesentium! Exercitationem, reprehenderit?</p>
