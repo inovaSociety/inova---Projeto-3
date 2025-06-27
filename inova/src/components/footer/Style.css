@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: space-between; /* Espaço entre as divs */
+}
+
+.footer > div {
+    flex: 1; /* Cada div ocupa o mesmo espaço */
+    margin: 0 10px; /* Espaçamento lateral opcional */
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 12px; /* espaçamento entre os ícones */
+  align-items: center; /* alinha verticalmente, caso necessário */
+}
+
+.social-icons li {
+  display: flex;
+}.social-icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 12px; /* espaçamento entre os ícones */
+  align-items: center; /* alinha verticalmente, caso necessário */
+}
+
+.social-icons li {
+  display: flex;
+}
+
+.social-icons img {
+  width: 32px;   /* ou 24px, 48px... */
+  height: 32px;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Efeito ao passar o mouse */
+}
