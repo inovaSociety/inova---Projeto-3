@@ -15,10 +15,7 @@ function App() {
      <Home/>
      <Service/>
      <Project/>
-    
      <About/>
-  
-     
     </>
   )
 }
