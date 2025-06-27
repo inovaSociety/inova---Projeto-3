@@ -11,6 +11,7 @@ import SetaEsquerda from '../../images/seta-esquerda.png'
 
 const Team = () => {
 
+
     var settings = {
         dots: true,
         infinite: true,
@@ -50,7 +51,7 @@ const Team = () => {
     <div className='body-team'>
         <div className='wrapper'>
 
-
+            <h2 className='team-title'>Conheça nosso time</h2>
            
             <Slider {...settings}>
                 {data.map((d) =>(

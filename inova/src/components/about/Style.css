@@ -23,7 +23,16 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to left top, #031A9A, #8B53FF);
+    background: linear-gradient(to left top, #031A9A, #8c53ff);
+}
+
+.team-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;  
+    font: bold 2.5em 'Open Sans', sans-serif;
 }
 
 .wrapper{
@@ -148,11 +157,11 @@
 
 .about-title{
     color: #080101;
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.5em;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .about-text{
@@ -169,9 +178,11 @@
     flex: 1;
     min-width: 300px; 
     max-width: 600px; 
-    padding: 20px; 
+    padding: 20px ; 
     box-sizing: border-box; 
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 .coluna-com-linha{
     position: relative;
@@ -181,11 +192,11 @@
 .coluna-com-linha::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: -30px;
   top: 0;
-  bottom: 0;
+  bottom: 0px;
   width: 4px;
-  background-color: #ffd700; /* A cor amarela */
+  background-color: #4983df; 
 }
 
 /* Estilos para o título e subtítulo também */
@@ -197,10 +208,14 @@
 
 .mid_titulo { /* O Que nos torna únicos */
     font-size: 2em;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
     text-align: center;
     margin-top: 50px; /* Espaçamento após o CardInovacao */
     margin-bottom: 30px;
 }
+
+
 
 
 
