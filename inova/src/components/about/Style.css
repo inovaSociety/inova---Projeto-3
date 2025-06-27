@@ -155,6 +155,53 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.about-text{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    padding: 20px; 
+}
+
+.about-text-coluna{
+    flex: 1;
+    min-width: 300px; 
+    max-width: 600px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: left;
+}
+.coluna-com-linha{
+    position: relative;
+  padding-left: 20px; /* Espaço para a linha */
+}
+
+.coluna-com-linha::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #ffd700; /* A cor amarela */
+}
+
+/* Estilos para o título e subtítulo também */
+.about-title {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mid_titulo { /* O Que nos torna únicos */
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px; /* Espaçamento após o CardInovacao */
+    margin-bottom: 30px;
+}
+
 
 
 
