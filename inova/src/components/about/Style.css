@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to left top, #031A9A, #8c53ff);
+    /* background: linear-gradient(to left top, #031A9A, #8c53ff); */
 }
 
 .team-title {
@@ -31,8 +31,9 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
-    color: #fff;  
+    color: blue;  
     font: bold 2.5em 'Open Sans', sans-serif;
+    margin-top: -150px;
 }
 
 .wrapper{
