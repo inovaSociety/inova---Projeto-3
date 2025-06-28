@@ -1,6 +1,6 @@
 import './Style.css';
 import React from 'react';
-import logo from '../../images/logo.svg';
+import logo from '../../images/inovas_logo.svg';
 import instagram from '../../images/instagram.png';
 import linkedin from '../../images/linkedin.png';
 import github from '../../images/github.png';
@@ -14,9 +14,7 @@ const Footer = () => {
             <img src={logo} alt="logo do site" />
           </div>
           <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus deleniti
-            doloremque ipsam, repudiandae molestiae temporibus dolor necessitatibus minima aliquid
-            praesentium, facere, explicabo ipsum nesciunt pariatur laborum quos in facilis.
+            Inova Society é uma empresa focada em soluções digitais inovadoras, oferecendo serviços personalizados em desenvolvimento web, design de interfaces e modelagem de negócios. Nosso compromisso é transformar ideias em experiências digitais impactantes.
           </h4>
           <ul className='social-icons'>
             <li><img src={instagram} alt="logo Instagram" /></li>
@@ -53,6 +51,9 @@ const Footer = () => {
             <button type="submit">Entrar em contato</button>
           </form>
         </div>
+      <div className='copyright'>
+        <p>&copy; 2025 Inova. Todos os direitos reservados.</p>
+      </div>
       </div>
     </div>
   );
