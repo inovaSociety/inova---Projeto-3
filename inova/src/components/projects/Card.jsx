@@ -49,7 +49,7 @@ const Card = () => {
 
             {projects.map((project,key) => (
                 <div
-                    key={key}
+                    key={project.id}
                     className='bg-[#f9f9f9] rounded-md shadow-sm transition-transform duration-200 max-w-sm mx-auto hover:-translate-y-1 project-card-um'
                 >
                     <div className='master-class'>
