@@ -9,15 +9,17 @@ const About = () => {
   return (
     <div className='about'>
 
-      <h1 className='about-title'>Sobre nós</h1>
+      
       <CardInovacao/>
       <h2 className='mid_titulo'>O  que nos faz únicos</h2>
       <div className='about-text'>
         <div className='about-text-coluna'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident, quis inventore quaerat repellendus, voluptates sed, reprehenderit earum accusamus non debitis labore delectus? Doloribus commodi a tempore praesentium! Exercitationem, reprehenderit?</p>
+          <p>Na InovaSociety, somos seus parceiros em tecnologia. Com uma equipe multidisciplinar, entregamos soluções tech completas e de alta performance, desde sistemas robustos de back-end até interfaces front-end modernas. Nossa expertise em WordPress e React garante sites dinâmicos e funcionais, sempre com transparência total em cada etapa do projeto e suporte contínuo para que você alcance resultados mensuráveis e impulsionadores para o seu negócio.</p>
         </div>
         <div className='about-text-coluna coluna-com-linha'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatibus neque facilis esse magni porro provident eos cupiditate sequi autem? Provident ex dignissimos tempora beatae labore asperiores tenetur vero maiores?</p>
+          <p>Valorizamos sua visão e o poder transformador dela. É a partir daí que criamos experiências digitais memoráveis, sempre com a experiência do usuário (UX) como prioridade inegociável.
+
+          Nossa equipe desenvolve soluções que não só funcionam, mas encantam. Seja em projetos WordPress ou React, garantimos facilidade de uso e satisfação total. Nosso compromisso? Uma relação de confiança duradoura, com comunicação clara e feedback constante, assegurando uma jornada digital e resultados impecáveis para você.</p>
         </div>
       </div>
         <Team/>
