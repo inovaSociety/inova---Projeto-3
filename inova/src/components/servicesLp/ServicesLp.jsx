@@ -7,6 +7,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import timelineElements from "./timeLineElements";
 import "./Style.css";
+import Faixa from "../about/Faixa";
 
 
 
@@ -41,6 +42,7 @@ const ServicesLp = () => {
           })
         }
       </VerticalTimeline>
+      <Faixa/>
     </div>
   );
 };
