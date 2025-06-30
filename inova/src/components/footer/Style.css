@@ -58,6 +58,7 @@
   display: flex;
   margin-top: -70px;
   margin-bottom: -70px;
+  width: 250px;
 }
 
 .services-column,
