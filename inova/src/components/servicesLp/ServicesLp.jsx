@@ -16,7 +16,8 @@ const ServicesLp = () => {
   const schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div className="service-p">
+    <>
+      <div className="service-p">
       <h1 className="title-service">Serviços</h1>
 
       <VerticalTimeline>
@@ -42,8 +43,10 @@ const ServicesLp = () => {
           })
         }
       </VerticalTimeline>
-      <Faixa/>
     </div>
+    <Faixa/>
+    </>
+    
   );
 };
 
