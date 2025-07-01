@@ -39,7 +39,6 @@ const Footer = () => {
           <h3>Informações</h3>
           <ul className='footer-list'>
             <li><a href="#">Perguntas Frequentes</a></li>
-            <li><a href="#">Sobre nós</a></li>
             <li><a href="#">Termos e condições</a></li>
           </ul>
         </div>
