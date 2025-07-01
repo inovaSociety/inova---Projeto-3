@@ -1,20 +1,6 @@
 @import "tailwindcss";
 
 
-section {
-  padding: 96px 16px;
-  position: relative;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1024px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-
 
 
 
@@ -50,10 +36,6 @@ span {
 }
 
 
-.project-card-um:hover {
-  transform: translateY(-2px);
-}
-
 .master-class {
   height: 192px;         /* exemplo com altura fixa */
   overflow: hidden;
@@ -70,34 +52,4 @@ span {
   transition: transform 0.5s;
 }
 
-.project-card-um:hover .project-image {
-  transform: scale(1.10);
-}
 
-.p-6 {
-  padding: 1.5rem; /* p-6 → 6 * 0.25rem = 1.5rem (24px) */
-}
-
-.tags-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;    /* gap-2 → 2 * 0.25rem = 0.5rem (8px) */
-  margin-bottom: -30px; /* mb-4 → 4 * 0.25rem = 1rem (16px) */
-}
-
-
-
-.project-title {
-  font-size: 1.25rem;       /* text-xl => 20px */
-  font-weight: 600;         /* font-semibold */
-  margin-bottom: 0.25rem;
-  margin-top: 10px; 
-  text-align: center;  /* mb-1 => 4px */
-}
-
-.project-description {
-  color: var(--muted-foreground, #6b7280); /* substitua pela cor real do seu design system */
-  font-size: 0.875rem;       /* text-sm => 14px */
-  margin-bottom: 1rem; 
-  margin-top: 5px;     /* mb-4 => 16px */
-}

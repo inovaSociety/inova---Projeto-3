@@ -6,7 +6,7 @@ import Card from './Card'
 
 const Project = () => {
   return (
-    <section>
+    <section className='py-24 px-4 relative '>
         <div className='projeto-zero'>
         <h2 className='text-[30px] font-bold mb-4 text-center'>Futuros <span className='text-secondary'>Projetos</span> </h2>
         <p className='text-center text-[#6c757d] text-muted-foreground mb-12 max-w-2xl mx-auto'>Conheça alguns dos nossos projetos mais recentes, desenvolvidos com foco em inovação, usabilidade e performance. Cada solução reflete nosso compromisso com a excelência em design, tecnologia e experiência do usuário.</p>
