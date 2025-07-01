@@ -1,11 +1,14 @@
 import './Style.css';
-import React from 'react';
 import logo from '../../images/inovas_logo.svg';
 import instagram from '../../images/instagram.png';
 import linkedin from '../../images/linkedin.png';
 import github from '../../images/github.png';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className='footer'>
       <div className='footer-content'>
@@ -29,7 +32,6 @@ const Footer = () => {
             <li><a href="#">Desenvolvimento Web</a></li>
             <li><a href="#">UX/UI Design</a></li>
             <li><a href="#">Modelagem de Negocio</a></li>
-            <li><a href="#">Desenvolvimento Mobile</a></li>
           </ul>
         </div>
 
@@ -37,19 +39,14 @@ const Footer = () => {
           <h3>Informações</h3>
           <ul className='footer-list'>
             <li><a href="#">Perguntas Frequentes</a></li>
-            <li><a href="#">Processo de Trabalho</a></li>
             <li><a href="#">Sobre nós</a></li>
             <li><a href="#">Termos e condições</a></li>
           </ul>
         </div>
 
         <div className='contact-column'>
-          <h3>Entrar em contato</h3>
-          <p>Digite seu email para contato</p>
-          <form>
-            <input type="email" placeholder="Seu email" required />
-            <button type="submit">Entrar em contato</button>
-          </form>
+          <h3>Fale Conosco</h3>
+            <button className='contato' onClick={()=> navigate('/contato')}>Entrar em contato</button>
         </div>
       <div className='copyright'>
         <p>&copy; 2025 Inova. Todos os direitos reservados.</p>
