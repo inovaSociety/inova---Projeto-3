@@ -3,11 +3,13 @@ import Team from './Team'
 import './Style.css'
 import Faixa from './Faixa'
 import CardInovacao from './CardInovacao'
+import Faixa02 from './Faixa02'
+
 
 
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='About'>
 
       
       <CardInovacao/>
@@ -23,7 +25,7 @@ const About = () => {
         </div>
       </div>
         <Team/>
-        
+       
         
     </div>
   )

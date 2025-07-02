@@ -11,11 +11,11 @@ const Index = () => {
                 <img src={logo} alt="logo do site " />
             </div>
             <div className='right'>
-                <a href="">Home</a>
-                <a href="">Projetos</a>
-                <a href="">Serviços</a>
-                <a href="">Sobre Nós</a>
-                <a href="">Contato</a>
+                <a href="#Home">Home</a>
+                <a href="#Project">Projetos</a>
+                <a href="#Service">Serviços</a>
+                <a href="#About">Sobre Nós</a>
+                <a href="#Contact">Contato</a>
             </div>
             <div className='b-teste'>
                 <a href="">Entre em contato</a>

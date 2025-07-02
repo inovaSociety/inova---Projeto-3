@@ -7,6 +7,7 @@ import Ranger from '../../images/power ranger vermelho.jpg';
 import IconLinkedin from '../../images/linkedinIcon.png';
 import IconGithub from '../../images/githubIcon.png';
 import IconInstagram from '../../images/instagramIcon.png';
+import Fernando from '../../images/fernando_foto.jpeg';
 
 import './Style.css'
 import SetaDireita from '../../images/seta-direita.png'
@@ -49,7 +50,7 @@ const Team = () => {
         {
             id: 3,
             name:"Fernando Ribeiro",
-            img:Ranger,
+            img:Fernando,
             job:"Desenvolvedor",
             socialIcons: [ 
                 {type: 'linkedin', icon: IconLinkedin, url: 'https://www.linkedin.com/in/fernando-rgomes1880'},
