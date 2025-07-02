@@ -5,7 +5,7 @@ import '../navbar/Style.css';
 
 const Contact = () => {
   return (
-    <div>
+    <div id='Contact'>
       <Index />
       <div>
         Contact
