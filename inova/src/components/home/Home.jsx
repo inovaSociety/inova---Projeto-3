@@ -8,9 +8,9 @@ const Home = () => {
         <div className="h-left">
           <div className="title">
             <div className="line">
-              <span className="sparkle">INOVAÇÃO</span> <span className="line-one">  e usabilidade</span>
+              <span className="sparkle">INOVA</span>ÇÃO <span className="line-one">  e usabilidade</span>
               <span className="line-two"> em cada detalhe</span>
-              <span className="sparkle">DESTAQUE</span> <span className="line-three">  sua empresa online</span>
+              <span className="spar">DESTAQUE</span> <span className="line-three">  sua empresa online</span>
             </div>
           </div>
           <div className="links">
