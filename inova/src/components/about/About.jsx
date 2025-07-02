@@ -25,7 +25,7 @@ const About = () => {
         </div>
       </div>
         <Team/>
-       
+        <Faixa02/>
         
     </div>
   )
