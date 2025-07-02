@@ -2,6 +2,8 @@ import React from 'react'
 import './Style.css';
 import Index from '../navbar/Index';
 import '../navbar/Style.css';
+import '../footer/Style.css';
+import Footer from '../footer/Footer';
 
 const Contact = () => {
   return (
@@ -42,6 +44,7 @@ const Contact = () => {
         </form>
 
       </div>
+      <Footer />
     </div>
   )
 }
