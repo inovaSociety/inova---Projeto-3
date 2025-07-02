@@ -15,4 +15,4 @@ const Faixa02 = () => {
   )
 }
 
-export default Faixa
+export default Faixa02
