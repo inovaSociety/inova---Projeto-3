@@ -23,7 +23,6 @@ const About = () => {
         </div>
       </div>
         <Team/>
-       
         
         
     </div>
