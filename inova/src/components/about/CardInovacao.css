@@ -9,19 +9,19 @@
 }
 
 .titulo-principal {
-  font-size: 3.5em; /* Tamanho da fonte grande para o título */
+  font-size: 2.0em; /* Tamanho da fonte grande para o título */
   font-weight: bold; /* Título em negrito */
   margin-bottom: 25px; /* Espaçamento abaixo do título */
   line-height: 1.1; /* Altura da linha para o texto não ficar muito junto */
 }
 
 .destaque {
-  color: #034ec6; /* Cor amarela para a parte destacada */
+  color: #2474f6; 
   display: block; /* Faz com que o destaque ocupe toda a linha */
 }
 
 .subtitulo {
-  font-size: 1.7em; /* Tamanho da fonte para o subtítulo */
+  font-size: 3.5em; /* Tamanho da fonte para o subtítulo */
   color: #ffffff; /* Subtítulo branco */
   margin-bottom: 40px; 
   font-weight: normal;
@@ -30,7 +30,7 @@
 }
 
 .saiba-mais {
-  font-size: 1.0em; 
+  font-size: 0.8em; 
   color: #cccccc; 
   text-align: center; /* Centraliza o texto do link */
   display: inline-flex; /* Permite alinhar o ícone com o texto */
