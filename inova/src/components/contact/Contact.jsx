@@ -1,9 +1,11 @@
-import React from 'react'
 import './Style.css';
 import Index from '../navbar/Index';
+import Footer from '../footer/Footer';
+import Faq from '../faq/Faq';
+import '../faq/Style.css';
 import '../navbar/Style.css';
 import '../footer/Style.css';
-import Footer from '../footer/Footer';
+
 import { useState } from 'react';
 
 const Contact = () => {
@@ -84,6 +86,7 @@ const Contact = () => {
           <button type="submit">Enviar</button>
         </form>
       </div>
+      <Faq />
       <Footer />
     </div>
   );
