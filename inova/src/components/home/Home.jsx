@@ -1,6 +1,5 @@
 import "./Style.css";
 import React from "react";
-import equipe from "../../images/equipe3d.png";
 const Home = () => {
   return (
     <>
