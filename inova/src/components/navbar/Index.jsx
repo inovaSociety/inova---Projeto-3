@@ -1,6 +1,7 @@
 import './Style.css'
 import logo from '../../images/logo.svg'
 import React from 'react'
+import Faixa from '../about/Faixa'
 
 const Index = () => {
   return (
@@ -11,11 +12,11 @@ const Index = () => {
                 <img src={logo} alt="logo do site " />
             </div>
             <div className='right'>
-                <a href="#Home">Home</a>
+                <a href="/">Home</a>
                 <a href="#Project">Projetos</a>
                 <a href="#Service">Serviços</a>
                 <a href="#About">Sobre Nós</a>
-                <a href="#Contact">Contato</a>
+                <a href="/contato">Contato</a>
             </div>
             <div className='b-teste'>
                 <a href="">Entre em contato</a>
