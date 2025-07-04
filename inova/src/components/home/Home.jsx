@@ -4,23 +4,6 @@ const Home = () => {
   return (
     <>
       <div className="hero">
-        {/* <div className="h-left">
-          <div className="title">
-            <div className="line">
-              <span className="sparkle">INOVA</span> <span className="line-one"></span>
-              <span className="line-two"> </span>
-              <span className="spar"></span> <span className="line-three"></span>
-            </div>
-          </div>
-          <div className="links">
-            <a href="" className="b-teste">
-              Conheça os projetos
-            </a>
-          </div>
-        </div>
-        <div className="h-right">
-          
-        </div> */}
 
         <div class="grid-container">
           <header class="japa">

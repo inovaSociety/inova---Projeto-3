@@ -7,7 +7,7 @@ import Ranger from '../../images/power ranger vermelho.jpg';
 import IconLinkedin from '../../images/linkedinIcon.png';
 import IconGithub from '../../images/githubIcon.png';
 import IconInstagram from '../../images/instagramIcon.png';
-import Fernando from '../../images/fernando_foto.jpeg';
+import Fernando from '../../images/foto_fernando.png';
 
 import './Style.css'
 import SetaDireita from '../../images/seta-direita.png'
