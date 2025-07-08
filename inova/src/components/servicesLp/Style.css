@@ -3,15 +3,22 @@
   text-align: end;
   font-family: "tt-norms", sans-serif;
   font-weight: 600;
-  margin-right: 500px;
+  margin-right: 480px;
 }
+
+@media (max-width: 1910px) {
+  .title-service {
+    margin-right: 295px;
+  
+  }
+}
+
 
 h3{
   padding-top: 0.25em;
 }
 
 .vertical-timeline-element-content {
-  box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0, 0.25), 0 0.4em 1.25em 0 rgba(0,0,0, 0.15) !important ;
   padding: 2em 3em !important;
 }
 
@@ -20,8 +27,7 @@ h3{
 }
 
 .service-p{
-  background-color: #F4F5F6
+ background-color: #F4F5F6
 }
-
 
 

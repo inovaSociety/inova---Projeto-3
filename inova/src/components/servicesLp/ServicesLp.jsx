@@ -20,7 +20,7 @@ const ServicesLp = () => {
       <div className="service-p" id="Service">
       <h1 className="title-service">Serviços</h1>
 
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="#00ffcc">
         {
           /* elementos vão aqui */
           timelineElements.map((element) => {
@@ -33,6 +33,9 @@ const ServicesLp = () => {
                 dateClassName="date"
                 iconStyle={element.iconStyle}
                 icon={element.icon}
+                contentStyle={{borderRadius: '1.75rem',background:'#1e1e1e',color:'#fff'}}
+                contentArrowStyle={{ borderRight: '7px solid rgb(8, 8, 8)' }}
+                
               >
                 <div className="box-filho-texto">
                   <h4>{element.title}</h4>
