@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center; /* Centraliza a container */
     box-sizing: border-box;
+    font-weight: 600
 }
 
 .container {
@@ -47,15 +48,16 @@
     rgb(100, 100, 100);
 }
 
-.b-teste a{
+.b-teste {
     text-decoration: none;
     color: #fff;
     background-color: rgb(8, 119, 229);
     padding: 7px 20px;
     border-radius: 5mm;
+    
 }
 
-.b-teste a:hover{
+.b-teste:hover{
     color: #fff;
     background-color: rgb(4, 101, 199);
     border: none;
