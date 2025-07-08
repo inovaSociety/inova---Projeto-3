@@ -13,7 +13,7 @@ const Project = () => {
 
         <Card/>
         <div className='text-center mt-6'>
-                    <a href="" className='inline-block bg-blue-800 text-white px-6 py-3 rounded-md text-base font-semibold border-2 border-blue-800 hover:bg-white hover:text-blue-800 transition'>Conheça os projetos</a>
+                    <a href="/projetos" className='inline-block bg-blue-800 text-white px-6 py-3 rounded-md text-base font-semibold border-2 border-blue-800 hover:bg-white hover:text-blue-800 transition'>Conheça os projetos</a>
         </div>
     </div>
 

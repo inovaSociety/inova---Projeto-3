@@ -7,6 +7,7 @@ import About from './components/about/About'
 import Footer from './components/footer/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Contact from './components/contact/Contact'
+import ProjectsPage from './components/projects/ProjectsPage'
 
 
 function App() {
@@ -23,7 +24,11 @@ function App() {
             <Footer />
           </>
         } />
+        
         <Route path='/contato' element={<Contact />} />
+        <Route path='/projetos' element={<ProjectsPage/>} />
+
+        
       </Routes>
     </BrowserRouter>
   )
