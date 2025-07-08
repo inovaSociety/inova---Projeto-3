@@ -221,10 +221,36 @@
     margin-bottom: 30px;
 }
 
+/* Garante que as setas do slick sejam visíveis e estilizadas */
+.slick-prev,
+.slick-next {
+  z-index: 5;
+  display: block !important;
+  width: 40px;
+  height: 40px;
+}
 
+/* Ícones das setas */
+.slick-prev:before,
+.slick-next:before {
+  content: '←'; /* seta esquerda */
+  color: #8B53FF; /* cor que você quer */
+  font-size: 30px;
+  opacity: 1;
+}
 
+.slick-next:before {
+  content: '→'; /* seta direita */
+}
 
+/* Posicionamento lateral */
+.slick-prev {
+  left: -30px;
+}
 
+.slick-next {
+  right: -30px;
+}
 
 
 
