@@ -7,6 +7,8 @@
   padding: 20px;
   max-width: 600px;
   border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .form-group {
@@ -43,4 +45,6 @@
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
