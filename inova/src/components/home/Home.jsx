@@ -1,4 +1,5 @@
 import "./Style.css";
+import Equipe from '../../images/imagemDaEquipe.jpg'
 import React from "react";
 const Home = () => {
   return (
@@ -12,8 +13,12 @@ const Home = () => {
           </header>
 
           <main class="main-text">
-            <span className="sparkle">INOVA SOCIETY</span> 
+            <span className="sparkle">INOVA SOCIETY</span>
           </main>
+
+          <div className="formaLouca">
+            <img className="formaContida"  src={Equipe} alt="imagem da equipe" />
+          </div>
 
           <section class="body-text">
             <p>
@@ -27,6 +32,7 @@ const Home = () => {
             </p>
           </section>
         </div>
+
       </div>
     </>
   );
