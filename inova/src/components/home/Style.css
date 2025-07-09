@@ -100,14 +100,14 @@
 
 .formaContida {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   height: auto;
   border-radius: 60% 40% 33% 67% / 57% 49% 51% 43%;
 }
 
 .formaLouca {
-  grid-column: 6 / 7;  /* Ultima coluna */
-  grid-row: 4 / 6;     /* Alinhado com o main-text */
+  grid-column: 4 / 7;  /* Ultima coluna */
+  grid-row: 2 / 9;     /* Alinhado com o main-text */
   display: flex;
   align-items: center;
   justify-content: center;
