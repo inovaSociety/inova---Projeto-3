@@ -5,82 +5,82 @@ import Faq from '../faq/Faq';
 import '../faq/Style.css';
 import '../navbar/Style.css';
 import '../footer/Style.css';
+import {useForm } from "react-hook-form";
+import validator from 'validator';
 
-import { useState } from 'react';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('')
-  const [interest, setInterest] = useState('');
-  const [message, setMessage] = useState('');
-  
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const formData = { name, email, interest, message };
-    console.log(formData);
-    alert('Formulário enviado com sucesso!');
+  const { 
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+    
+  console.log({errors}); //Para ver os erros no console
+
+  const onSubmit = (data) => {
+    console.log(data);
   };
+  
 
   return (
     <div id='Contact'>
       <Index />
       <div>
-        <form className='contact-form' onSubmit={sendEmail}>
+        <form className='contact-form' onSubmit={handleSubmit(onSubmit)}>
           <h1 className='titulo-contato'>Fale Conosco!</h1>
 
           <div className='form-group'>
             <label htmlFor="name">Nome:</label>
             <input 
-            type="text" 
-            id="name" 
-            name="name" 
-            value={name}
-            placeholder='Digite seu nome..'
-            onChange={(e) => setName(e.target.value)}
-            required 
+            className={errors?.name &&  "input-error"}
+            type="text"  
+            placeholder='Digite seu nome...'
+            {...register("name", {required: true })}
             />
+            {errors?.name?.type === "required" && (<p className='error-message'>Nome é obrigatório.</p>)}
           </div>
 
           <div className='form-group'>
             <label htmlFor="email">E-mail:</label>
             <input 
-            type="email" 
-            id="email" 
-            name="email" 
+            className={errors?.email && "input-error"}
+            type="email"  
             placeholder='Digite seu e-mail...'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)} 
-            required 
+            {...register("email", {
+              required: true, 
+              validate: (value) => validator.isEmail(value),
+            })}
             />
+            {errors?.email?.type === "required" && (<p className='error-message'>E-mail é obrigatório.</p>)}
+
+            {errors?.email?.type === "validate" && (<p className='error-message'>E-mail é inválido.</p>)}
           </div>
 
           <div className='form-group'>
-            <label for="interest">Assunto desejado:</label>
+            <label htmlFor="interest">Assunto desejado:</label>
             <select 
-            id="interest" 
-            name="interest" 
-            value={interest}
-            onChange={(e) => setInterest(e.target.value)}
-            required
+              defaultValue=""
+              className={errors?.interest && "input-error"}
+              {...register("interest", {required: true })}
             >
-              <option value="" disabled hidden>Selecione uma opção</option>
+              <option value="" disabled hidden >Selecione uma opção</option>
               <option value="programa">Desenvolvimento Web</option>
               <option value="ux/ui">UX/UI Design</option>
               <option value="modelagem">Modelagem de Negocio</option>
             </select>
+            {errors?.interest && (<p className='error-message'>Selecione um assunto.</p>)}
           </div>
 
           <div className='form-group'>
             <label htmlFor="message">Mensagem:</label>
             <textarea 
-            id="message"
-            name="message" 
+            className={errors?.message && "input-error"} 
             rows="4"
             placeholder='Digite sua mensagem...'
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
+            {...register("message", {required: true })}
             ></textarea>
+            {errors?.message?.type === "required" && (<p className='error-message'>Mensagem é obrigatória.</p>)}
           </div>
           <button type="submit">Enviar</button>
         </form>
