@@ -18,9 +18,29 @@ const Contact = () => {
     
   console.log({errors}); //Para ver os erros no console
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+  const onSubmit = async (data) => {
+  try {
+    const response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("Mensagem enviada com sucesso!");
+    } else {
+      alert("Erro ao enviar mensagem.");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Erro de conexão com o servidor.");
+  }
+};
+
   
 
   return (
