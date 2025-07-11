@@ -3,7 +3,6 @@ import Index from '../navbar/Index';
 import Footer from '../footer/Footer';
 import Faq from '../faq/Faq';
 import '../navbar/Style.css';
-import '../footer/Style.css';
 import {useForm } from "react-hook-form";
 import validator from 'validator';
 
