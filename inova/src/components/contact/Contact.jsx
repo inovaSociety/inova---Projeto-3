@@ -2,7 +2,6 @@ import './Style.css';
 import Index from '../navbar/Index';
 import Footer from '../footer/Footer';
 import Faq from '../faq/Faq';
-import '../faq/Style.css';
 import '../navbar/Style.css';
 import '../footer/Style.css';
 import {useForm } from "react-hook-form";
