@@ -14,7 +14,7 @@ const Footer = () => {
         {/* Coluna Inova */}
         <div className="flex-1 space-y-4 max-w-md">
           <img src={logo} alt="logo do site" className="h-60 -mt-15" />
-          <p className="text-base text-black -mt-15 font-semibold">
+          <p className="text-sm text-black -mt-15 font-semibold">
             Inova Society é uma empresa focada em soluções digitais inovadoras, oferecendo serviços personalizados em desenvolvimento web, design de interfaces e modelagem de negócios. Nosso compromisso é transformar ideias em experiências digitais impactantes.
           </p>
           <div className="flex space-x-4 mt-8">
