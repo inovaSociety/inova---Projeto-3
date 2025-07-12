@@ -17,10 +17,9 @@ const Footer = () => {
           <p className="text-sm text-black -mt-15 font-semibold">
             Inova Society é uma empresa focada em soluções digitais inovadoras, oferecendo serviços personalizados em desenvolvimento web, design de interfaces e modelagem de negócios. Nosso compromisso é transformar ideias em experiências digitais impactantes.
           </p>
-          <div className="flex space-x-4 mt-8">
-            <img src={instagram} alt="logo Instagram" className="h-8 w-8" />
-            <img src={linkedin} alt="logo LinkedIn" className="h-8 w-8" />
-            <img src={github} alt="logo GitHub" className="h-8 w-8" />
+          <div className="flex space-x-4 mt-8 cursor-pointer">
+            <a href="https://www.instagram.com/inovasociety/" className="hover:underline"><img src={instagram} alt="logo Instagram" className="h-8 w-8" /></a>
+            <a href="https://github.com/inovaSociety" className="hover:underline"><img src={github} alt="logo GitHub" className="h-8 w-8" /></a>
           </div>
         </div>
 
@@ -38,7 +37,7 @@ const Footer = () => {
         <div>
           <h3 className="font-bold mb-2 text-lg">Informações</h3>
           <ul className="space-y-1 text-sm text-black font-semibold ">
-            <li><a href="#" className="hover:underline">Perguntas Frequentes</a></li>
+            <li><a href="/contato" className="hover:underline">Perguntas Frequentes</a></li>
             <li><a href="#" className="hover:underline">Termos e condições</a></li>
           </ul>
         </div>
