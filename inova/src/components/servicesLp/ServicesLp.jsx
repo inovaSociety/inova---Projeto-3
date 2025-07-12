@@ -16,11 +16,12 @@ const ServicesLp = () => {
   const schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <>
+    < div className="fundo-service">
+      <Faixa/>
       <div className="service-p" id="Service">
       <h1 className="title-service">Serviços</h1>
 
-      <VerticalTimeline lineColor="#00ffcc">
+      <VerticalTimeline lineColor="#00ffcc" className="linha-da-timeline">
         {
           /* elementos vão aqui */
           timelineElements.map((element) => {
@@ -33,7 +34,16 @@ const ServicesLp = () => {
                 dateClassName="date"
                 iconStyle={element.iconStyle}
                 icon={element.icon}
-                contentStyle={{borderRadius: '1.75rem',background:'#1e1e1e',color:'#fff'}}
+                contentStyle={{borderRadius: '1.75rem',background: "rgba(20, 20, 20, 0.9)"
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  ,color:'#fff'}}
                 contentArrowStyle={{ borderRight: '7px solid rgb(8, 8, 8)' }}
                 
               >
@@ -47,8 +57,8 @@ const ServicesLp = () => {
         }
       </VerticalTimeline>
     </div>
-    <Faixa/>
-    </>
+    
+    </div>
     
   );
 };
