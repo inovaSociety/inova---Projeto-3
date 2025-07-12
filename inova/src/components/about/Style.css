@@ -252,7 +252,17 @@
   right: -30px;
 }
 
+.social-icons{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 8px;
+}
 
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
 
 
 
