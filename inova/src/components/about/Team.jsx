@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,8 +13,6 @@ import Fernando from "../../images/foto_fernando.png";
 import "./Style.css";
 
 const Team = () => {
-
-    
   const NextArrow = ({ onClick }) => (
     <div
       className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-purple-600 hover:text-purple-800"
@@ -53,8 +52,8 @@ const Team = () => {
       name: "Jason Lee",
       img: Ranger,
       job: "Desenvolvedor",
+      description: "Especialista em JavaScript e Fã de Power Rangers.",
       socialIcons: [
-        // Add social icons here
         { type: "linkedin", icon: IconLinkedin, url: "" },
         { type: "github", icon: IconGithub, url: "" },
       ],
@@ -64,11 +63,12 @@ const Team = () => {
       name: "João Miguel",
       img: Ranger,
       job: "Desenvolvedor",
+      description: "",
       socialIcons: [
         {
           type: "linkedin",
           icon: IconLinkedin,
-          url: "www.linkedin.com/in/joao-miguel-santos-1589b0311",
+          url: "https://www.linkedin.com/in/joao-miguel-santos-1589b0311",
         },
         {
           type: "github",
@@ -82,6 +82,7 @@ const Team = () => {
       name: "Fernando Ribeiro",
       img: Fernando,
       job: "Desenvolvedor",
+      description: "Apaixonado por inovação, ensino e desenvolvimento full-stack.",
       socialIcons: [
         {
           type: "linkedin",
@@ -105,52 +106,64 @@ const Team = () => {
       name: "Jason Lee",
       img: Ranger,
       job: "Desenvolvedor",
+      description: "",
       socialIcons: [
-        // Add social icons here
         { type: "linkedin", icon: IconLinkedin, url: "" },
         { type: "github", icon: IconGithub, url: "" },
       ],
     },
   ];
+
   return (
     <div className="body-team">
       <div className="wrapper">
         <h2 className="team-title">Conheça nosso time</h2>
 
         <Slider {...settings}>
-          {data.map((d) => (
-            <div key={d.id}  className="carousel">
-              <div className="card">
-                <div className="img">
-                  <img src={d.img} alt="imagem do profissional" />
-                </div>
-                <h2>{d.name}</h2>
-                <span>{d.job}</span>
-                {d.socialIcons &&
-                  d.socialIcons.length > 0 && ( // Renderiza apenas se houver ícones
-                    <div className="social-icons">
-                      {" "}
-                      {/* Nova div para os ícones */}
-                      {d.socialIcons.map((icon, index) => (
-                        <a
-                          key={index}
-                          href={icon.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src={icon.icon}
-                            alt={icon.type}
-                            className={`icon-${icon.type}`}
-                          />
-                        </a>
-                      ))}
-                    </div>
-                  )}
+  {data.map((d) => {
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    return (
+      <div key={d.id} className="carousel">
+        <div className="card">
+          <div className={`card-inner ${isFlipped ? "flipped" : ""}`}>
+            <div className="card-front">
+              <div className="img">
+                <img src={d.img} alt="imagem do profissional" />
               </div>
+              <h2>{d.name}</h2>
+              <span>{d.job}</span>
+              {d.socialIcons && d.socialIcons.length > 0 && (
+                <div className="social-icons">
+                  {d.socialIcons.map((icon, index) => (
+                    <a
+                      key={index}
+                      href={icon.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={icon.icon} alt={icon.type} />
+                    </a>
+                  ))}
+                </div>
+              )}
+              <button className="flip-button" onClick={() => setIsFlipped(true)}>
+                Ver mais
+              </button>
             </div>
-          ))}
-        </Slider>
+
+            <div className="card-back">
+              <p>{d.description}</p>
+              <button className="flip-button" onClick={() => setIsFlipped(false)}>
+                Voltar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</Slider>
       </div>
     </div>
   );
