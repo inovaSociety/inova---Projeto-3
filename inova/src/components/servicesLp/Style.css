@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #F4F4F4;
   padding: 40px;
   box-sizing: border-box;
   
@@ -54,14 +54,27 @@
   color: #444;
  
 }
-
 .nomeM {
   display: inline-block;
   transform: translateY(-60px); /* move para cima */
-  background: linear-gradient(90deg, #2E38F2 0%, #1B208C 100%);
-   -webkit-background-clip: text;
+
+  /* Gradiente animado com as suas cores */
+  background: linear-gradient(
+    to right,
+    #2E38F2,
+    #1B208C,
+    #2E38F2
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* para browsers modernos */
-  color: transparent;
+
+  animation: animate-gradient 2.5s linear infinite;
 }
 
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}
