@@ -5,37 +5,36 @@ import Faq from '../faq/Faq';
 import '../navbar/Style.css';
 import {useForm } from "react-hook-form";
 import validator from 'validator';
-
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { 
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
     
   console.log({errors}); //Para ver os erros no console
 
-  const onSubmit = async (data) => {
+ const onSubmit = async (data) => {
   try {
-    const response = await fetch('http://localhost:5000/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+    await emailjs.send(
+      'service_2wluire',     // coloque seu Service ID do EmailJS
+      'template_sgmqkqp',    // coloque seu Template ID do EmailJS
+      {
+        name: data.name,
+        email: data.email,
+        interest: data.interest,
+        message: data.message,
       },
-      body: JSON.stringify(data),
-    });
-
-    const result = await response.json();
-
-    if (result.success) {
-      alert("Mensagem enviada com sucesso!");
-    } else {
-      alert("Erro ao enviar mensagem.");
-    }
+      'zJPOyaXgznHF58rK7'      // coloque seu Public Key do EmailJS
+    );
+    alert("Mensagem enviada com sucesso!");
+    reset();
   } catch (error) {
     console.error(error);
-    alert("Erro de conexão com o servidor.");
+    alert("Erro ao enviar mensagem.");
   }
 };
 
@@ -83,9 +82,9 @@ const Contact = () => {
               {...register("interest", {required: true })}
             >
               <option value="" disabled hidden >Selecione uma opção</option>
-              <option value="programa">Desenvolvimento Web</option>
-              <option value="ux/ui">UX/UI Design</option>
-              <option value="modelagem">Modelagem de Negocio</option>
+              <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+              <option value="UX/UI">UX/UI Design</option>
+              <option value="Modelagem de Negócio">Modelagem de Negócio</option>
             </select>
             {errors?.interest && (<p className='error-message'>Selecione um assunto.</p>)}
           </div>
