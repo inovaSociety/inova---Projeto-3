@@ -1,10 +1,3 @@
-.title-service {
-  font-size: 70px;
-  text-align: end;
-  font-family: "tt-norms", sans-serif;
-  font-weight: 600;
-  margin-right: 480px;
-}
 
 .fundo-service{
   width: 100%;
@@ -15,6 +8,7 @@
   background: #fff;
   padding: 40px;
   box-sizing: border-box;
+  
 }
 
 @media (max-width: 1910px) {
@@ -24,23 +18,50 @@
   }
 }
 
-h3{
-  padding-top: 0.25em;
+.services-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
 }
 
-.vertical-timeline-element-content {
-  padding: 2em 3em !important;
-}
+.texto-formt{
 
-#description{
-  margin: 1.5em 0 2em 0;
-}
+  width: 370px;          /* largura fixa da caixa */
+  height: 400px; 
 
-.service-p{
- background-color: rgb(255, 255, 255);
+  overflow: hidden;     
+  text-overflow: ellipsis; 
+  word-wrap: break-word;
 
 }
 
-.linha-da-timeline{
-  
+.services-text h2 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 1px;
 }
+
+.services-text h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services-text p {
+  font-size: 16px;
+ font-weight:500;
+  color: #444;
+ 
+}
+
+.nomeM {
+  display: inline-block;
+  transform: translateY(-60px); /* move para cima */
+  background: linear-gradient(90deg, #2E38F2 0%, #1B208C 100%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* para browsers modernos */
+  color: transparent;
+}
+
