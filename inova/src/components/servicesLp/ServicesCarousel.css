@@ -37,45 +37,38 @@
   margin-top: 20px;
 }
 
-.custom-arrows .slick-prev,
-.custom-arrows .slick-next {
-  position: static; /* remove a posição lateral */
-  transform: none;
-  background: #5a2dff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  color: #fff;
-}
-
-.custom-arrows .slick-prev:before,
-.custom-arrows .slick-next:before {
-  font-size: 20px;
-  color: white;
-}
 
 
 
- /* Configurar a seta para a cor e a posição correta */
+
+
+ /* Configurar a seta para a cor e a posição correta */ 
 .slick-prev:before,
 .slick-next:before {
-  color: #3037BF !important;   /* cor vermelha */
-  font-size: 30px;         /* opcional: aumenta o tamanho */
+  color: #3037BF !important;
+  font-size: 20px;          /*opcional: aumenta o tamanho */
 }
 
 .slick-prev,
 .slick-next {
-  top: auto;         /* remove alinhamento vertical */
-  bottom: 15px;     /* empurra para baixo do carrossel */
-  transform: none;   /* remove o translate padrão */
+  top: auto;          /*remove alinhamento vertical*/ 
+  bottom: 15px;     /*empurra para baixo do carrossel*/ 
+  transform: none;   /*remove o translate padrão */
+   width: 50px;              /* 🔹 bolinha maior */
+  height: 50px;
+  border-radius: 50%;       /* deixa redonda */
+  background: rgba(48, 55, 191, 0.3); /* bolinha translúcida */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slick-prev {
-  left: -15%;   /* controla a posição horizontal da seta esquerda */
+  left: -15%;    /*controla a posição horizontal da seta esquerda */
 }
 
 .slick-next {
-  right: 105%;  /* controla a posição horizontal da seta direita */
+  right: 105%;   /*controla a posição horizontal da seta direita*/ 
 }
 
 
@@ -92,3 +85,38 @@
   padding: 0 10px; /* espaçamento entre os slides */
 }
 
+.service-card h3,
+.service-card p {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+
+.custom-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(48, 55, 191, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(280%);
+}
+
+.custom-arrow svg {
+  pointer-events: none; /* garante que clique funcione no botão */
+}
+
+.custom-arrow.prev {
+  left: -150px;
+}
+
+.custom-arrow.next {
+ right: 1035px;
+}
