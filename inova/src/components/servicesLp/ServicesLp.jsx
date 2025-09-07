@@ -8,6 +8,8 @@ import "react-vertical-timeline-component/style.min.css";
 import timelineElements from "./timeLineElements";
 import "./Style.css";
 import Faixa from "../about/Faixa";
+import Team from "../about/Team";
+import ServicesCarousel from "./ServicesCarousel";
 
 
 
@@ -33,6 +35,9 @@ const ServicesLp = () => {
           </div>
           
         </div>
+         <div className="services-slider">
+            <ServicesCarousel/>
+          </div>
 
       </div>
     

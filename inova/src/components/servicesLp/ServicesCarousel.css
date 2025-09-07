@@ -1,0 +1,94 @@
+.services-carousel {
+  max-width: 1000px;
+    margin: 100px auto 0 auto; /* 🔹 empurra 100px para baixo */
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Posiciona as setas embaixo */
+.custom-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.custom-arrows .slick-prev,
+.custom-arrows .slick-next {
+  position: static; /* remove a posição lateral */
+  transform: none;
+  background: #5a2dff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.custom-arrows .slick-prev:before,
+.custom-arrows .slick-next:before {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+ /* Configurar a seta para a cor e a posição correta */
+.slick-prev:before,
+.slick-next:before {
+  color: #3037BF !important;   /* cor vermelha */
+  font-size: 30px;         /* opcional: aumenta o tamanho */
+}
+
+.slick-prev,
+.slick-next {
+  top: auto;         /* remove alinhamento vertical */
+  bottom: 15px;     /* empurra para baixo do carrossel */
+  transform: none;   /* remove o translate padrão */
+}
+
+.slick-prev {
+  left: -15%;   /* controla a posição horizontal da seta esquerda */
+}
+
+.slick-next {
+  right: 105%;  /* controla a posição horizontal da seta direita */
+}
+
+
+.service-card {
+  background: #3037BF;
+  border-radius: 16px;
+  min-height: 250px;   /* altura mínima */
+  height: 400px;      /* define altura exata */
+  width: 200px;
+  margin: 5 20px;
+}
+
+.slick-slide {
+  padding: 0 10px; /* espaçamento entre os slides */
+}
+
