@@ -17,46 +17,39 @@ const ServicesLp = () => {
 
   return (
     < div className="fundo-service">
-      <Faixa/>
-      <div className="service-p" id="Service">
-      <h1 className="title-service">Serviços</h1>
+      <div className="services-container">
+        {/* Texto da esquerda */}
+        <div className="services-text">
+          <h2>SERVIÇOS</h2>
+          <h3>Transformamos ideias em soluções digitais</h3>
+          <p>
+            Criamos softwares sob medida para impulsionar empresas e startups.
+            Nossos serviços vão do desenvolvimento de sistemas robustos até
+            soluções em nuvem, sempre com foco em inovação, qualidade e resultados
+            reais para o seu negócio.
+          </p>
+        </div>
 
-      <VerticalTimeline lineColor="#00ffcc" className="linha-da-timeline">
-        {
-          /* elementos vão aqui */
-          timelineElements.map((element) => {
-            const isWorkIcon = element.icon === "work";
+        {/* Cards de serviços */}
+        <div className="services-cards">
+          <div className="card">
+            <h4>Desenvolvimento de Sistemas</h4>
+            <p>
+              Construímos sistemas personalizados que atendem às necessidades
+              específicas da sua empresa. Garantimos escalabilidade, segurança e
+              alta performance.
+            </p>
+          </div>
 
-            return (
-              <VerticalTimelineElement
-                key={element.id}
-                date={element.date}
-                dateClassName="date"
-                iconStyle={element.iconStyle}
-                icon={element.icon}
-                contentStyle={{borderRadius: '1.75rem',background: "rgba(20, 20, 20, 0.9)"
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  ,color:'#fff'}}
-                contentArrowStyle={{ borderRight: '7px solid rgb(8, 8, 8)' }}
-                
-              >
-                <div className="box-filho-texto">
-                  <h4>{element.title}</h4>
-                  <p>{element.description}</p>
-                </div>
-              </VerticalTimelineElement>
-            );
-          })
-        }
-      </VerticalTimeline>
-    </div>
+          <div className="card">
+            <h4>Cloud Computing</h4>
+            <p>
+              Migramos e gerenciamos aplicações na nuvem, proporcionando mais
+              flexibilidade, redução de custos e disponibilidade 24/7.
+            </p>
+          </div>
+        </div>
+      </div>
     
     </div>
     

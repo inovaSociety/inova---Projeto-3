@@ -6,6 +6,17 @@
   margin-right: 480px;
 }
 
+.fundo-service{
+  width: 100%;
+  height: 100vh; /* altura da tela inteira */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 1910px) {
   .title-service {
     margin-right: 295px;
