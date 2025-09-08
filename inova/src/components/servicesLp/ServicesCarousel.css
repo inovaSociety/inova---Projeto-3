@@ -11,12 +11,24 @@
 }
 
 .service-card {
-  background: #fff;
+  background: #3037BF;
   border-radius: 16px;
+  height: 440px;
+  width: 280px;           /* 200 + 2*30 de padding */
   padding: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 5px 10px;       /* o “5 20px” estava sem unidade */
+  box-sizing: border-box; /* inclui o padding na largura */
+  
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    /* centraliza horizontalmente os filhos */
+  justify-content: flex-start; 
   text-align: center;
+  gap: 16px;
 }
+
+
+
 
 .service-card h3 {
   margin-bottom: 10px;
@@ -72,14 +84,7 @@
 }
 
 
-.service-card {
-  background: #3037BF;
-  border-radius: 16px;
-  min-height: 250px;   /* altura mínima */
-  height: 400px;      /* define altura exata */
-  width: 200px;
-  margin: 5 20px;
-}
+
 
 .slick-slide {
   padding: 0 10px; /* espaçamento entre os slides */
@@ -88,7 +93,16 @@
 .service-card h3,
 .service-card p {
   color: #fff;
-  font-weight: bold;
+  
+}
+.service-card p{
+    font-size: 14px;
+    font-weight:500;
+}
+
+.service-card h3{
+    margin-bottom: 28px; 
+    font-weight: bold
 }
 
 
@@ -119,4 +133,24 @@
 
 .custom-arrow.next {
  right: 1035px;
+}
+
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;         /* garante centralização */
+  margin-bottom: 35px; 
+}
+
+
+.circulo img { 
+  width: 50%;
+  height: auto;
+  display: block;
 }

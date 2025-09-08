@@ -1,6 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import "./ServicesCarousel.css";
+import Codi from "../../images/codificacao.png";
+import Engre from "../../images/computacao-em-nuvem.png"
+import Consultor from "../../images/consultor.png"
+
 
 // seta esquerda
 const PrevArrow = ({ onClick }) => (
@@ -56,10 +60,22 @@ const ServicesCarousel = () => {
   };
 
   const services = [
-    { title: "Desenvolvimento Web", desc: "Sites modernos e responsivos" },
-    { title: "Sistemas Sob Medida", desc: "Aplicações personalizadas" },
-    { title: "Soluções em Nuvem", desc: "Infraestrutura escalável" },
-    { title: "Consultoria Tech", desc: "Estratégia e inovação" },
+    { title: "Desenvolvimento Web",
+     desc: "Sites modernos e responsivos" 
+    },
+
+    { title: "Sistemas Sob Medida", 
+        desc: "Soluções sob medida para o seu negócio Construímos sistemas personalizados que atendem às necessidades específicas da sua empresa. Desde plataformas web até softwares corporativos, garantimos escalabilidade, segurança e alta performance.",
+        img: Codi 
+    },
+    { title: "Soluções em Nuvem", 
+       desc: "Infraestrutura moderna e segura Migramos, hospedamos e gerenciamos aplicações na nuvem, proporcionando mais flexibilidade, redução de custos e disponibilidade 24/7. Trabalhamos com as principais plataformas do mercado: AWS, Azure e Google Cloud ",
+       img: Engre
+    },
+    { title: "Consultoria Tech", 
+        desc: "Phasellus sit amet sapien nec nunc cursus pretium. Integer luctus, magna at vulputate viverra, nisl mauris volutpat nulla, vitae convallis erat lacus sed ipsum. Cras quis arcu at urna bibendum ultricies non ac ligula. Sed vitae mi nec",
+        img: Consultor 
+    },
   ];
 
   return (
@@ -67,6 +83,7 @@ const ServicesCarousel = () => {
       <Slider {...settings}>
         {services.map((service, index) => (
           <div key={index} className="service-card">
+            <div className="circulo"> <img src={service.img} alt="teste" /></div>
             <h3>{service.title}</h3>
             <p>{service.desc}</p>
           </div>
